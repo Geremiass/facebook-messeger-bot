@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutomateFlow - Especialistas em automação empresarial com n8n. Transforme seus processos manuais em fluxos automatizados e eficientes.">
+    <meta name="keywords" content="automação, n8n, workflow, integração, processos, eficiência, produtividade">
+    <title>AutomateFlow | Automação Inteligente com n8n</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fas fa-bolt"></i>
+                AutomateFlow
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#benefits" class="nav__link">Benefícios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Depoimentos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">
+                        <i class="fas fa-rocket"></i>
+                        Automação empresarial com n8n
+                    </span>
+                    <h1 class="hero__title">
+                        Transforme processos manuais em
+                        <span class="gradient-text">fluxos automatizados</span>
+                    </h1>
+                    <p class="hero__description">
+                        Economize tempo, reduza erros e aumente a produtividade da sua empresa com soluções de automação personalizadas usando n8n, a plataforma open-source mais poderosa do mercado.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="button button--primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="#services" class="button button--outline">
+                            <i class="fas fa-play"></i>
+                            Ver Serviços
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">500+</span>
+                            <span class="hero__stat-text">Automações criadas</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">150+</span>
+                            <span class="hero__stat-text">Clientes satisfeitos</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">10k+</span>
+                            <span class="hero__stat-text">Horas economizadas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__workflow">
+                        <div class="workflow__node workflow__node--trigger">
+                            <i class="fas fa-bolt"></i>
+                            <span>Trigger</span>
+                        </div>
+                        <div class="workflow__line"></div>
+                        <div class="workflow__node workflow__node--process">
+                            <i class="fas fa-cogs"></i>
+                            <span>Processar</span>
+                        </div>
+                        <div class="workflow__line"></div>
+                        <div class="workflow__node workflow__node--action">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Ação</span>
+                        </div>
+                    </div>
+                    <div class="hero__floating-icons">
+                        <div class="floating-icon floating-icon--1">
+                            <i class="fab fa-slack"></i>
+                        </div>
+                        <div class="floating-icon floating-icon--2">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="floating-icon floating-icon--3">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="floating-icon floating-icon--4">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-icon floating-icon--5">
+                            <i class="fab fa-hubspot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__bg-shapes">
+                <div class="shape shape--1"></div>
+                <div class="shape shape--2"></div>
+                <div class="shape shape--3"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nossos Serviços</span>
+                    <h2 class="section__title">Soluções de automação <span class="gradient-text">sob medida</span></h2>
+                    <p class="section__description">
+                        Oferecemos um portfólio completo de serviços de automação para atender às necessidades específicas do seu negócio.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="service__title">Automação de Workflows</h3>
+                        <p class="service__description">
+                            Criação de fluxos de trabalho automatizados que conectam suas ferramentas e eliminam tarefas repetitivas.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Integração entre sistemas</li>
+                            <li><i class="fas fa-check"></i> Fluxos personalizados</li>
+                            <li><i class="fas fa-check"></i> Monitoramento em tempo real</li>
+                        </ul>
+                    </div>
+
+                    <div class="service__card service__card--featured">
+                        <div class="service__badge">Mais Popular</div>
+                        <div class="service__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service__title">Automação de Marketing</h3>
+                        <p class="service__description">
+                            Automatize campanhas, leads, e-mails e redes sociais para maximizar resultados com menos esforço.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Nutrição de leads</li>
+                            <li><i class="fas fa-check"></i> E-mail marketing automático</li>
+                            <li><i class="fas fa-check"></i> Integração com CRM</li>
+                        </ul>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 class="service__title">Sincronização de Dados</h3>
+                        <p class="service__description">
+                            Mantenha seus dados sincronizados entre diferentes plataformas automaticamente e em tempo real.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Sync bidirecional</li>
+                            <li><i class="fas fa-check"></i> Backup automático</li>
+                            <li><i class="fas fa-check"></i> Validação de dados</li>
+                        </ul>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="service__title">Chatbots & Atendimento</h3>
+                        <p class="service__description">
+                            Automatize o atendimento ao cliente com chatbots inteligentes integrados ao WhatsApp, Telegram e mais.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Respostas automáticas</li>
+                            <li><i class="fas fa-check"></i> Integração com IA</li>
+                            <li><i class="fas fa-check"></i> Multi-plataforma</li>
+                        </ul>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3 class="service__title">Automação Financeira</h3>
+                        <p class="service__description">
+                            Automatize processos financeiros como faturamento, cobranças, relatórios e conciliação bancária.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Emissão de NF automática</li>
+                            <li><i class="fas fa-check"></i> Cobrança recorrente</li>
+                            <li><i class="fas fa-check"></i> Relatórios automáticos</li>
+                        </ul>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="service__title">Consultoria & Treinamento</h3>
+                        <p class="service__description">
+                            Capacite sua equipe para criar e gerenciar suas próprias automações com nosso treinamento especializado.
+                        </p>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Treinamento in-company</li>
+                            <li><i class="fas fa-check"></i> Documentação completa</li>
+                            <li><i class="fas fa-check"></i> Suporte contínuo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__container">
+                    <div class="about__content">
+                        <span class="section__subtitle">Sobre Nós</span>
+                        <h2 class="section__title">Por que escolher a <span class="gradient-text">AutomateFlow</span>?</h2>
+                        <p class="about__text">
+                            Somos especialistas em automação empresarial utilizando n8n, a plataforma open-source que está revolucionando a forma como empresas conectam seus sistemas e automatizam processos.
+                        </p>
+                        <p class="about__text">
+                            Nossa missão é democratizar a automação, tornando-a acessível para empresas de todos os tamanhos, desde startups até grandes corporações.
+                        </p>
+
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="about__feature-content">
+                                    <h4>Segurança em Primeiro Lugar</h4>
+                                    <p>Seus dados ficam protegidos com as melhores práticas de segurança.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="about__feature-content">
+                                    <h4>Suporte Dedicado</h4>
+                                    <p>Equipe especializada disponível para ajudar quando você precisar.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="about__feature-content">
+                                    <h4>100% Personalizável</h4>
+                                    <p>Soluções adaptadas às necessidades específicas do seu negócio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__image">
+                        <div class="about__n8n-logo">
+                            <div class="n8n-visual">
+                                <div class="n8n-node n8n-node--1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="n8n-connector n8n-connector--1"></div>
+                                <div class="n8n-node n8n-node--2">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <div class="n8n-connector n8n-connector--2"></div>
+                                <div class="n8n-node n8n-node--3">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="n8n-connector n8n-connector--3"></div>
+                                <div class="n8n-node n8n-node--4">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits section" id="benefits">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Benefícios</span>
+                    <h2 class="section__title">O que você ganha com <span class="gradient-text">automação</span></h2>
+                </div>
+
+                <div class="benefits__grid">
+                    <div class="benefit__card">
+                        <div class="benefit__number">01</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="benefit__title">Economia de Tempo</h3>
+                        <p class="benefit__description">
+                            Reduza até 80% do tempo gasto em tarefas manuais repetitivas. Sua equipe pode focar no que realmente importa.
+                        </p>
+                    </div>
+
+                    <div class="benefit__card">
+                        <div class="benefit__number">02</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3 class="benefit__title">Redução de Erros</h3>
+                        <p class="benefit__description">
+                            Elimine erros humanos com processos padronizados e automatizados. Maior precisão em todas as operações.
+                        </p>
+                    </div>
+
+                    <div class="benefit__card">
+                        <div class="benefit__number">03</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="benefit__title">Escalabilidade</h3>
+                        <p class="benefit__description">
+                            Cresça sem aumentar proporcionalmente sua equipe. Automações escalam junto com seu negócio.
+                        </p>
+                    </div>
+
+                    <div class="benefit__card">
+                        <div class="benefit__number">04</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3 class="benefit__title">Redução de Custos</h3>
+                        <p class="benefit__description">
+                            Diminua custos operacionais e aumente a eficiência. ROI comprovado em poucos meses de implementação.
+                        </p>
+                    </div>
+
+                    <div class="benefit__card">
+                        <div class="benefit__number">05</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="benefit__title">Melhor Experiência</h3>
+                        <p class="benefit__description">
+                            Ofereça respostas mais rápidas e consistentes aos seus clientes. Melhore a satisfação e fidelização.
+                        </p>
+                    </div>
+
+                    <div class="benefit__card">
+                        <div class="benefit__number">06</div>
+                        <div class="benefit__icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="benefit__title">Visibilidade Total</h3>
+                        <p class="benefit__description">
+                            Tenha visão completa dos seus processos com dashboards e relatórios em tempo real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works section">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Como Funciona</span>
+                    <h2 class="section__title">Do diagnóstico à <span class="gradient-text">automação em produção</span></h2>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Diagnóstico</h3>
+                            <p class="step__description">
+                                Analisamos seus processos atuais e identificamos oportunidades de automação com maior impacto.
+                            </p>
+                        </div>
+                        <div class="step__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Planejamento</h3>
+                            <p class="step__description">
+                                Desenhamos a arquitetura dos fluxos e definimos integrações, regras de negócio e métricas.
+                            </p>
+                        </div>
+                        <div class="step__icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Desenvolvimento</h3>
+                            <p class="step__description">
+                                Construímos os workflows no n8n, integrando todas as ferramentas e sistemas necessários.
+                            </p>
+                        </div>
+                        <div class="step__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Testes & Deploy</h3>
+                            <p class="step__description">
+                                Testamos rigorosamente e implementamos em produção com monitoramento ativo.
+                            </p>
+                        </div>
+                        <div class="step__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations -->
+        <section class="integrations section">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Integrações</span>
+                    <h2 class="section__title">Conectamos com <span class="gradient-text">400+ ferramentas</span></h2>
+                    <p class="section__description">
+                        O n8n suporta centenas de integrações nativas e permite criar conexões personalizadas via API.
+                    </p>
+                </div>
+
+                <div class="integrations__logos">
+                    <div class="integration__logo"><i class="fab fa-google"></i><span>Google</span></div>
+                    <div class="integration__logo"><i class="fab fa-slack"></i><span>Slack</span></div>
+                    <div class="integration__logo"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></div>
+                    <div class="integration__logo"><i class="fab fa-hubspot"></i><span>HubSpot</span></div>
+                    <div class="integration__logo"><i class="fab fa-salesforce"></i><span>Salesforce</span></div>
+                    <div class="integration__logo"><i class="fab fa-trello"></i><span>Trello</span></div>
+                    <div class="integration__logo"><i class="fab fa-stripe"></i><span>Stripe</span></div>
+                    <div class="integration__logo"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+                    <div class="integration__logo"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="integration__logo"><i class="fab fa-telegram"></i><span>Telegram</span></div>
+                    <div class="integration__logo"><i class="fab fa-mailchimp"></i><span>Mailchimp</span></div>
+                    <div class="integration__logo"><i class="fab fa-github"></i><span>GitHub</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Depoimentos</span>
+                    <h2 class="section__title">O que nossos <span class="gradient-text">clientes dizem</span></h2>
+                </div>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial__card">
+                        <div class="testimonial__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial__text">
+                            "A AutomateFlow transformou completamente nossa operação. Reduzimos em 70% o tempo gasto com tarefas administrativas e nossa equipe agora foca em atividades estratégicas."
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial__info">
+                                <h4>Carlos Silva</h4>
+                                <span>CEO, TechStartup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card">
+                        <div class="testimonial__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial__text">
+                            "O chatbot que criaram para nosso e-commerce reduziu em 50% os tickets de suporte. A integração com WhatsApp e nosso ERP foi impecável."
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial__info">
+                                <h4>Ana Beatriz</h4>
+                                <span>Gerente de Operações, E-Shop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card">
+                        <div class="testimonial__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial__text">
+                            "Profissionais extremamente competentes. A automação do nosso processo de vendas aumentou nossa taxa de conversão em 35%. ROI em apenas 2 meses."
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial__info">
+                                <h4>Roberto Mendes</h4>
+                                <span>Diretor Comercial, VendasPro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Pronto para automatizar seu negócio?</h2>
+                    <p class="cta__description">
+                        Agende uma consulta gratuita e descubra como podemos transformar seus processos com automação inteligente.
+                    </p>
+                    <a href="#contact" class="button button--light">
+                        <i class="fas fa-calendar-check"></i>
+                        Agendar Consulta Gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Contato</span>
+                    <h2 class="section__title">Vamos conversar sobre <span class="gradient-text">seu projeto</span></h2>
+                    <p class="section__description">
+                        Entre em contato conosco e descubra como podemos ajudar sua empresa a crescer com automação.
+                    </p>
+                </div>
+
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>E-mail</h3>
+                            <p>contato@automateflow.com.br</p>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3>WhatsApp</h3>
+                            <p>(11) 99999-9999</p>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Localização</h3>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+
+                        <div class="contact__social">
+                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social__link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social__link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" name="name" placeholder="Seu nome" required class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <input type="email" name="email" placeholder="Seu e-mail" required class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" name="phone" placeholder="Seu telefone" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <select name="service" class="form__input" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="workflow">Automação de Workflows</option>
+                                <option value="marketing">Automação de Marketing</option>
+                                <option value="sync">Sincronização de Dados</option>
+                                <option value="chatbot">Chatbots & Atendimento</option>
+                                <option value="financial">Automação Financeira</option>
+                                <option value="consulting">Consultoria & Treinamento</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <textarea name="message" placeholder="Conte-nos sobre seu projeto" rows="4" required class="form__input"></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary button--full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <i class="fas fa-bolt"></i>
+                        AutomateFlow
+                    </a>
+                    <p class="footer__description">
+                        Transformando negócios através da automação inteligente com n8n.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Automação de Workflows</a></li>
+                        <li><a href="#services">Marketing Automation</a></li>
+                        <li><a href="#services">Chatbots</a></li>
+                        <li><a href="#services">Consultoria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas de automação no seu e-mail.</p>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Seu e-mail" class="newsletter__input">
+                        <button type="submit" class="newsletter__button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 AutomateFlow. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> e <i class="fas fa-bolt"></i> n8n</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
