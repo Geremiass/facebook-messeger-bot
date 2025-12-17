@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Dentaria Sorriso de Santiago | Praia, Cabo Verde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+:root{--primary-color:#0077b6;--primary-dark:#005f8d;--secondary-color:#00b4d8;--accent-color:#90e0ef;--white:#fff;--light-gray:#f8f9fa;--gray:#6c757d;--dark-gray:#343a40;--text-color:#2d3436;--text-light:#636e72;--success-color:#00b894;--shadow-sm:0 2px 4px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);--shadow-lg:0 8px 24px rgba(0,0,0,.12);--border-radius:12px;--border-radius-sm:8px;--transition:all .3s ease;--font-primary:'Poppins',sans-serif;--font-secondary:'Playfair Display',serif}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--font-primary);font-size:16px;line-height:1.6;color:var(--text-color);background-color:var(--white)}a{text-decoration:none;color:inherit;transition:var(--transition)}ul{list-style:none}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}h1,h2,h3,h4{font-family:var(--font-secondary);font-weight:600;line-height:1.3}.section-tag{display:inline-block;font-size:.875rem;font-weight:600;color:var(--primary-color);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}.section-title{font-size:2.5rem;margin-bottom:20px}.section-description{font-size:1.1rem;color:var(--text-light);max-width:700px;margin:0 auto}.section-header{text-align:center;margin-bottom:60px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 32px;font-size:1rem;font-weight:500;border-radius:var(--border-radius);cursor:pointer;transition:var(--transition);border:none;gap:8px}.btn-primary{background-color:var(--primary-color);color:var(--white)}.btn-primary:hover{background-color:var(--primary-dark);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-secondary{background-color:transparent;color:var(--white);border:2px solid var(--white)}.btn-secondary:hover{background-color:var(--white);color:var(--primary-color)}.btn-full{width:100%}.header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 0;transition:var(--transition)}.header.scrolled{background-color:var(--white);box-shadow:var(--shadow-sm);padding:15px 0}.nav{display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-size:1.5rem;font-weight:700;color:var(--white)}.header.scrolled .logo{color:var(--primary-color)}.logo-icon{font-size:2rem}.logo-text{font-family:var(--font-secondary)}.nav-menu{display:flex;align-items:center;gap:30px}.nav-link{font-size:.95rem;font-weight:500;color:var(--white);position:relative}.header.scrolled .nav-link{color:var(--text-color)}.nav-link::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background-color:var(--accent-color);transition:var(--transition)}.nav-link:hover::after{width:100%}.btn-agendar{background-color:var(--white);color:var(--primary-color)!important;padding:10px 20px;border-radius:var(--border-radius-sm)}.header.scrolled .btn-agendar{background-color:var(--primary-color);color:var(--white)!important}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:5px}.nav-toggle span{width:25px;height:3px;background-color:var(--white);border-radius:2px;transition:var(--transition)}.header.scrolled .nav-toggle span{background-color:var(--text-color)}.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);padding-top:100px}.hero-content{position:relative;z-index:1;text-align:center;color:var(--white);max-width:800px;margin:0 auto;padding:60px 20px}.hero-title{font-size:3.5rem;font-weight:700;margin-bottom:20px;color:var(--white)}.hero-subtitle{font-size:1.25rem;opacity:.9;margin-bottom:40px;line-height:1.8}.hero-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.hero-features{position:relative;z-index:1;background-color:var(--white);margin-top:auto;padding:30px 0;box-shadow:var(--shadow-lg)}.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.feature-item{display:flex;align-items:center;gap:15px}.feature-icon{font-size:2.5rem}.feature-item h3{font-size:1rem;font-weight:600;margin-bottom:2px}.feature-item p{font-size:.875rem;color:var(--text-light)}.sobre{padding:100px 0;background-color:var(--white)}.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.image-placeholder{background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);border-radius:var(--border-radius);padding:100px 40px;text-align:center;color:var(--white)}.placeholder-icon{font-size:6rem;display:block;margin-bottom:20px}.sobre-text{color:var(--text-light);margin-bottom:20px}.sobre-lista{margin:30px 0}.sobre-lista li{display:flex;align-items:center;gap:12px;padding:10px 0;font-weight:500}.check-icon{color:var(--success-color);font-weight:bold}.servicos{padding:100px 0;background-color:var(--light-gray)}.servicos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.servico-card{background-color:var(--white);padding:35px 25px;border-radius:var(--border-radius);text-align:center;transition:var(--transition);box-shadow:var(--shadow-sm)}.servico-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-lg)}.servico-icon{font-size:3rem;margin-bottom:20px}.servico-card h3{font-size:1.125rem;margin-bottom:12px;font-family:var(--font-primary)}.servico-card p{font-size:.9rem;color:var(--text-light);line-height:1.6}.equipa{padding:100px 0;background-color:var(--white)}.equipa-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.membro-card{text-align:center;background-color:var(--light-gray);border-radius:var(--border-radius);overflow:hidden;transition:var(--transition)}.membro-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}.membro-foto{padding:30px 30px 20px}.foto-placeholder{width:150px;height:150px;margin:0 auto;background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:4rem}.membro-info{padding:0 25px 30px}.membro-info h3{font-size:1.25rem;margin-bottom:5px;font-family:var(--font-primary)}.membro-cargo{display:block;font-size:.875rem;color:var(--primary-color);font-weight:600;margin-bottom:5px}.membro-especialidade{display:block;font-size:.8rem;color:var(--text-light);margin-bottom:15px}.membro-info p{font-size:.9rem;color:var(--text-light)}.horario{padding:100px 0;background-color:var(--light-gray)}.horario-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.horario-lista{margin:30px 0}.horario-item{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #e9ecef}.horario-item .dia{font-weight:500}.horario-item .horas{color:var(--primary-color);font-weight:600}.horario-item.fechado .horas{color:var(--gray)}.horario-nota{font-size:.9rem;color:var(--text-light);padding:15px;background-color:var(--white);border-radius:var(--border-radius-sm);border-left:4px solid var(--primary-color)}.cta-box{background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);padding:40px;border-radius:var(--border-radius);color:var(--white)}.cta-box h3{font-size:1.75rem;color:var(--white);margin-bottom:15px}.cta-box p{opacity:.9;margin-bottom:30px}.cta-contactos{display:flex;flex-direction:column;gap:15px}.cta-item{display:flex;align-items:center;gap:15px;padding:15px;background-color:rgba(255,255,255,.1);border-radius:var(--border-radius-sm);transition:var(--transition)}.cta-item:hover{background-color:rgba(255,255,255,.2)}.cta-icon{font-size:1.5rem}.cta-label{display:block;font-size:.75rem;opacity:.8;text-transform:uppercase;letter-spacing:1px}.cta-valor{font-weight:600}.testemunhos{padding:100px 0;background-color:var(--white)}.testemunhos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.testemunho-card{background-color:var(--light-gray);padding:35px;border-radius:var(--border-radius);transition:var(--transition)}.testemunho-card:hover{box-shadow:var(--shadow-lg)}.testemunho-stars{margin-bottom:20px}.testemunho-texto{font-size:1rem;color:var(--text-color);font-style:italic;margin-bottom:25px;line-height:1.8}.testemunho-autor{display:flex;align-items:center;gap:15px}.autor-avatar{width:50px;height:50px;background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:600;font-size:1.25rem}.autor-nome{display:block;font-weight:600}.autor-local{font-size:.875rem;color:var(--text-light)}.contacto{padding:100px 0;background-color:var(--light-gray)}.contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.contacto-info>p{color:var(--text-light);margin-bottom:30px}.info-items{display:flex;flex-direction:column;gap:25px}.info-item{display:flex;gap:20px}.info-icon{font-size:1.5rem;width:50px;height:50px;background-color:var(--white);border-radius:var(--border-radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0}.info-item h4{font-size:1rem;margin-bottom:5px;font-family:var(--font-primary)}.info-item p{font-size:.9rem;color:var(--text-light)}.social-links{display:flex;gap:15px;margin-top:30px}.social-link{width:45px;height:45px;background-color:var(--primary-color);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:600;transition:var(--transition)}.social-link:hover{background-color:var(--primary-dark);transform:translateY(-3px)}.contacto-form{background-color:var(--white);padding:40px;border-radius:var(--border-radius);box-shadow:var(--shadow-md)}.contacto-form h3{font-size:1.5rem;margin-bottom:30px;text-align:center}.form-group{margin-bottom:20px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}.form-group label{display:block;font-size:.9rem;font-weight:500;margin-bottom:8px}.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 18px;font-size:1rem;font-family:var(--font-primary);border:2px solid #e9ecef;border-radius:var(--border-radius-sm);transition:var(--transition);background-color:var(--white)}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--primary-color)}.mapa{height:400px}.mapa-container{height:100%}.mapa-container iframe{display:block}.footer{background-color:var(--dark-gray);color:var(--white);padding:80px 0 30px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:50px}.footer-logo{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:700;margin-bottom:20px}.footer-about p{color:#adb5bd;font-size:.9rem;line-height:1.8}.footer h4{font-size:1.125rem;margin-bottom:25px;color:var(--white);font-family:var(--font-primary)}.footer-links ul li,.footer-servicos ul li{margin-bottom:12px}.footer-links a,.footer-servicos a{color:#adb5bd;font-size:.9rem;transition:var(--transition)}.footer-links a:hover,.footer-servicos a:hover{color:var(--white);padding-left:5px}.footer-contacto p{color:#adb5bd;font-size:.9rem;margin-bottom:15px;line-height:1.8}.footer-bottom{padding-top:30px;border-top:1px solid rgba(255,255,255,.1);text-align:center}.footer-bottom p{color:#adb5bd;font-size:.875rem}.back-to-top{position:fixed;bottom:30px;right:30px;width:50px;height:50px;background-color:var(--primary-color);color:var(--white);border:none;border-radius:50%;font-size:1.25rem;cursor:pointer;opacity:0;visibility:hidden;transition:var(--transition);z-index:999;box-shadow:var(--shadow-md)}.back-to-top.visible{opacity:1;visibility:visible}.back-to-top:hover{background-color:var(--primary-dark);transform:translateY(-5px)}@media(max-width:1024px){.features-grid{grid-template-columns:repeat(2,1fr)}.servicos-grid{grid-template-columns:repeat(3,1fr)}.equipa-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:768px){.section-title{font-size:2rem}.nav-toggle{display:flex}.nav-menu{position:fixed;top:0;right:-100%;width:80%;max-width:350px;height:100vh;background-color:var(--white);flex-direction:column;padding:80px 40px;gap:20px;transition:var(--transition);box-shadow:var(--shadow-lg)}.nav-menu.active{right:0}.nav-link{color:var(--text-color)!important;font-size:1.1rem}.btn-agendar{background-color:var(--primary-color)!important;color:var(--white)!important;width:100%;text-align:center;margin-top:20px}.hero-title{font-size:2.5rem}.features-grid{grid-template-columns:1fr 1fr;gap:20px}.sobre-grid,.horario-grid,.contacto-grid{grid-template-columns:1fr;gap:40px}.servicos-grid{grid-template-columns:repeat(2,1fr)}.testemunhos-grid{grid-template-columns:1fr}}@media(max-width:576px){.container{padding:0 15px}.section-title{font-size:1.75rem}.hero-title{font-size:2rem}.hero-buttons{flex-direction:column;width:100%}.hero-buttons .btn{width:100%}.features-grid,.servicos-grid,.equipa-grid{grid-template-columns:1fr}.feature-item{justify-content:center;text-align:center;flex-direction:column}.form-row{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;text-align:center}.footer-logo{justify-content:center}.contacto-form{padding:25px}.cta-box{padding:30px 20px}}
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo"><span class="logo-icon">&#129463;</span><span class="logo-text">Sorriso de Santiago</span></a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nos</a></li>
+                    <li><a href="#servicos" class="nav-link">Servicos</a></li>
+                    <li><a href="#equipa" class="nav-link">Equipa</a></li>
+                    <li><a href="#horario" class="nav-link">Horario</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link btn-agendar">Agendar Consulta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">O Seu Sorriso e a Nossa Prioridade</h1>
+                <p class="hero-subtitle">Clinica dentaria de referencia em Praia, Santiago. Tratamentos modernos com profissionais qualificados para cuidar da saude do seu sorriso.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Agendar Consulta</a>
+                    <a href="#servicos" class="btn btn-secondary">Nossos Servicos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item"><span class="feature-icon">&#9200;</span><div><h3>Horario Flexivel</h3><p>Segunda a Sabado</p></div></div>
+                    <div class="feature-item"><span class="feature-icon">&#128104;&#8205;&#9877;&#65039;</span><div><h3>Equipa Experiente</h3><p>Profissionais Qualificados</p></div></div>
+                    <div class="feature-item"><span class="feature-icon">&#127973;</span><div><h3>Equipamentos Modernos</h3><p>Tecnologia Avancada</p></div></div>
+                    <div class="feature-item"><span class="feature-icon">&#128179;</span><div><h3>Facilidades de Pagamento</h3><p>Varias Modalidades</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-image">
+                    <div class="image-placeholder"><span class="placeholder-icon">&#127973;</span><p>Clinica Dentaria</p></div>
+                </div>
+                <div class="sobre-content">
+                    <span class="section-tag">Sobre Nos</span>
+                    <h2 class="section-title">A Sua Clinica Dentaria de Confianca em Praia</h2>
+                    <p class="sobre-text">A <strong>Clinica Dentaria Sorriso de Santiago</strong> e uma referencia em saude oral na ilha de Santiago. Localizada no coracao da cidade da Praia, oferecemos tratamentos dentarios de excelencia num ambiente acolhedor e moderno.</p>
+                    <p class="sobre-text">A nossa missao e proporcionar cuidados dentarios de qualidade superior, utilizando tecnologia de ponta e tecnicas avancadas.</p>
+                    <ul class="sobre-lista">
+                        <li><span class="check-icon">&#10003;</span> Mais de 10 anos de experiencia</li>
+                        <li><span class="check-icon">&#10003;</span> Equipa multidisciplinar especializada</li>
+                        <li><span class="check-icon">&#10003;</span> Ambiente confortavel e acolhedor</li>
+                        <li><span class="check-icon">&#10003;</span> Tecnologia e equipamentos modernos</li>
+                        <li><span class="check-icon">&#10003;</span> Atendimento personalizado</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Conheca a Nossa Clinica</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Os Nossos Servicos</span>
+                <h2 class="section-title">Tratamentos Dentarios Especializados</h2>
+                <p class="section-description">Oferecemos uma gama completa de servicos dentarios para toda a familia.</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card"><div class="servico-icon">&#128269;</div><h3>Consulta e Diagnostico</h3><p>Avaliacao completa da saude oral com exames detalhados.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#129703;</div><h3>Limpeza Dentaria</h3><p>Higienizacao profissional para remocao de tartaro.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#129463;</div><h3>Restauracoes</h3><p>Tratamento de caries com materiais de alta qualidade.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#10024;</div><h3>Branqueamento</h3><p>Clareamento dental profissional.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128295;</div><h3>Ortodontia</h3><p>Aparelhos dentarios fixos e removiveis.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#127959;</div><h3>Implantes Dentarios</h3><p>Substituicao de dentes perdidos.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128081;</div><h3>Proteses Dentarias</h3><p>Proteses fixas e removiveis.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#129440;</div><h3>Endodontia</h3><p>Tratamento de canal com tecnicas modernas.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128513;</div><h3>Estetica Dentaria</h3><p>Facetas e lentes de contacto dentarias.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128118;</div><h3>Odontopediatria</h3><p>Cuidados dentarios para criancas.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128298;</div><h3>Cirurgia Oral</h3><p>Extracao de dentes do siso.</p></div>
+                <div class="servico-card"><div class="servico-icon">&#128680;</div><h3>Urgencias Dentarias</h3><p>Atendimento prioritario para emergencias.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipa" id="equipa">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">A Nossa Equipa</span>
+                <h2 class="section-title">Profissionais Dedicados ao Seu Sorriso</h2>
+            </div>
+            <div class="equipa-grid">
+                <div class="membro-card"><div class="membro-foto"><div class="foto-placeholder"><span>&#128104;&#8205;&#9877;&#65039;</span></div></div><div class="membro-info"><h3>Dr. Antonio Silva</h3><span class="membro-cargo">Director Clinico</span><span class="membro-especialidade">Implantologia e Cirurgia Oral</span><p>Mais de 15 anos de experiencia.</p></div></div>
+                <div class="membro-card"><div class="membro-foto"><div class="foto-placeholder"><span>&#128105;&#8205;&#9877;&#65039;</span></div></div><div class="membro-info"><h3>Dra. Maria Santos</h3><span class="membro-cargo">Medica Dentista</span><span class="membro-especialidade">Ortodontia</span><p>Especialista em ortodontia.</p></div></div>
+                <div class="membro-card"><div class="membro-foto"><div class="foto-placeholder"><span>&#128104;&#8205;&#9877;&#65039;</span></div></div><div class="membro-info"><h3>Dr. Joao Tavares</h3><span class="membro-cargo">Medico Dentista</span><span class="membro-especialidade">Endodontia</span><p>Especialista em tratamentos de canal.</p></div></div>
+                <div class="membro-card"><div class="membro-foto"><div class="foto-placeholder"><span>&#128105;&#8205;&#9877;&#65039;</span></div></div><div class="membro-info"><h3>Dra. Ana Rodrigues</h3><span class="membro-cargo">Medica Dentista</span><span class="membro-especialidade">Odontopediatria</span><p>Dedicada ao atendimento infantil.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horario" id="horario">
+        <div class="container">
+            <div class="horario-grid">
+                <div class="horario-info">
+                    <span class="section-tag">Horario de Funcionamento</span>
+                    <h2 class="section-title">Estamos Aqui Para Si</h2>
+                    <p>A nossa clinica esta aberta durante a semana e ao sabado de manha.</p>
+                    <div class="horario-lista">
+                        <div class="horario-item"><span class="dia">Segunda-feira</span><span class="horas">08:00 - 18:00</span></div>
+                        <div class="horario-item"><span class="dia">Terca-feira</span><span class="horas">08:00 - 18:00</span></div>
+                        <div class="horario-item"><span class="dia">Quarta-feira</span><span class="horas">08:00 - 18:00</span></div>
+                        <div class="horario-item"><span class="dia">Quinta-feira</span><span class="horas">08:00 - 18:00</span></div>
+                        <div class="horario-item"><span class="dia">Sexta-feira</span><span class="horas">08:00 - 18:00</span></div>
+                        <div class="horario-item"><span class="dia">Sabado</span><span class="horas">08:00 - 13:00</span></div>
+                        <div class="horario-item fechado"><span class="dia">Domingo</span><span class="horas">Fechado</span></div>
+                    </div>
+                    <p class="horario-nota"><strong>Nota:</strong> Atendemos urgencias dentarias.</p>
+                </div>
+                <div class="horario-cta">
+                    <div class="cta-box">
+                        <h3>Marque a Sua Consulta</h3>
+                        <p>Nao espere mais para cuidar do seu sorriso.</p>
+                        <div class="cta-contactos">
+                            <a href="tel:+2389991234" class="cta-item"><span class="cta-icon">&#128222;</span><div><span class="cta-label">Telefone</span><span class="cta-valor">(+238) 999 1234</span></div></a>
+                            <a href="https://wa.me/2389991234" class="cta-item"><span class="cta-icon">&#128172;</span><div><span class="cta-label">WhatsApp</span><span class="cta-valor">(+238) 999 1234</span></div></a>
+                            <a href="mailto:info@sorrisodesantiago.cv" class="cta-item"><span class="cta-icon">&#9993;</span><div><span class="cta-label">Email</span><span class="cta-valor">info@sorrisodesantiago.cv</span></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testemunhos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testemunhos</span>
+                <h2 class="section-title">O Que Dizem os Nossos Pacientes</h2>
+            </div>
+            <div class="testemunhos-grid">
+                <div class="testemunho-card"><div class="testemunho-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p class="testemunho-texto">"Excelente atendimento! A equipa e muito profissional e atenciosa."</p><div class="testemunho-autor"><div class="autor-avatar">C</div><div><span class="autor-nome">Carla Mendes</span><span class="autor-local">Praia, Santiago</span></div></div></div>
+                <div class="testemunho-card"><div class="testemunho-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p class="testemunho-texto">"Fiz o meu implante dentario aqui e o resultado foi fantastico!"</p><div class="testemunho-autor"><div class="autor-avatar">M</div><div><span class="autor-nome">Manuel Fonseca</span><span class="autor-local">Assomada</span></div></div></div>
+                <div class="testemunho-card"><div class="testemunho-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p class="testemunho-texto">"Os meus filhos adoram ir ao dentista gracas a Dra. Ana."</p><div class="testemunho-autor"><div class="autor-avatar">S</div><div><span class="autor-nome">Sofia Lopes</span><span class="autor-local">Praia, Santiago</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <span class="section-tag">Contacte-nos</span>
+                    <h2 class="section-title">Estamos a Sua Disposicao</h2>
+                    <p>Tem alguma duvida ou deseja marcar uma consulta?</p>
+                    <div class="info-items">
+                        <div class="info-item"><span class="info-icon">&#128205;</span><div><h4>Morada</h4><p>Av. Cidade de Lisboa, Plateau<br>Praia, Santiago, Cabo Verde</p></div></div>
+                        <div class="info-item"><span class="info-icon">&#128222;</span><div><h4>Telefone</h4><p>(+238) 999 1234<br>(+238) 261 1234</p></div></div>
+                        <div class="info-item"><span class="info-icon">&#9993;</span><div><h4>Email</h4><p>info@sorrisodesantiago.cv</p></div></div>
+                        <div class="info-item"><span class="info-icon">&#128172;</span><div><h4>WhatsApp</h4><p>(+238) 999 1234</p></div></div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><span>f</span></a>
+                        <a href="#" class="social-link"><span>&#128247;</span></a>
+                        <a href="#" class="social-link"><span>&#128172;</span></a>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <form id="formContacto">
+                        <h3>Marque a Sua Consulta</h3>
+                        <div class="form-group"><label for="nome">Nome Completo *</label><input type="text" id="nome" name="nome" required placeholder="O seu nome"></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required placeholder="seu@email.com"></div>
+                            <div class="form-group"><label for="telefone">Telefone *</label><input type="tel" id="telefone" name="telefone" required placeholder="(+238) 000 0000"></div>
+                        </div>
+                        <div class="form-group"><label for="servico">Servico Pretendido</label><select id="servico" name="servico"><option value="">Selecione um servico</option><option value="consulta">Consulta Geral</option><option value="limpeza">Limpeza Dentaria</option><option value="branqueamento">Branqueamento</option><option value="ortodontia">Ortodontia</option><option value="implantes">Implantes</option><option value="urgencia">Urgencia</option></select></div>
+                        <div class="form-group"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente o motivo da consulta..."></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Pedido de Marcacao</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa">
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.4544635896507!2d-23.5087!3d14.918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDU1JzA0LjgiTiAyM8KwMzAnMzEuMyJX!5e0!3m2!1spt-PT!2scv!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about"><a href="#" class="footer-logo"><span class="logo-icon">&#129463;</span><span class="logo-text">Sorriso de Santiago</span></a><p>A sua clinica dentaria de confianca em Praia, Santiago.</p></div>
+                <div class="footer-links"><h4>Links Rapidos</h4><ul><li><a href="#inicio">Inicio</a></li><li><a href="#sobre">Sobre Nos</a></li><li><a href="#servicos">Servicos</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+                <div class="footer-servicos"><h4>Servicos</h4><ul><li><a href="#servicos">Consulta</a></li><li><a href="#servicos">Branqueamento</a></li><li><a href="#servicos">Ortodontia</a></li><li><a href="#servicos">Implantes</a></li></ul></div>
+                <div class="footer-contacto"><h4>Contacto</h4><p>&#128205; Av. Cidade de Lisboa, Plateau<br>Praia, Santiago, Cabo Verde</p><p>&#128222; (+238) 999 1234</p><p>&#9993; info@sorrisodesantiago.cv</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Clinica Dentaria Sorriso de Santiago. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">&#8593;</button>
+
+    <script>
+document.addEventListener('DOMContentLoaded',function(){const navToggle=document.getElementById('navToggle'),navMenu=document.getElementById('navMenu'),header=document.getElementById('header'),backToTop=document.getElementById('backToTop');navToggle&&navMenu&&(navToggle.addEventListener('click',function(){navMenu.classList.toggle('active')}),navMenu.querySelectorAll('.nav-link').forEach(e=>e.addEventListener('click',function(){navMenu.classList.remove('active')})));window.addEventListener('scroll',function(){window.scrollY>100?header.classList.add('scrolled'):header.classList.remove('scrolled');window.scrollY>500?backToTop.classList.add('visible'):backToTop.classList.remove('visible')});backToTop&&backToTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener('click',function(t){const n=this.getAttribute('href');if(n==='#')return;const o=document.querySelector(n);o&&(t.preventDefault(),window.scrollTo({top:o.offsetTop-header.offsetHeight,behavior:'smooth'}))})});const form=document.getElementById('formContacto');form&&form.addEventListener('submit',function(e){e.preventDefault();alert('Obrigado! O seu pedido foi enviado com sucesso.');form.reset()})});
+    </script>
+</body>
+</html>
