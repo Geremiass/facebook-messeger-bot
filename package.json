@@ -1,0 +1,28 @@
+{
+  "name": "facebook-messenger-clinic-bot",
+  "version": "1.0.0",
+  "description": "Bot do Facebook Messenger para agendamento de consultas na clínica",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "facebook",
+    "messenger",
+    "bot",
+    "clinic",
+    "appointment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
