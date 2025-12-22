@@ -1,0 +1,210 @@
+{
+  "name": "Agendamento Clínica Dentária",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "agendar-consulta",
+        "responseMode": "responseNode",
+        "options": {
+          "rawBody": false
+        }
+      },
+      "id": "webhook-node",
+      "name": "Webhook - Receber Agendamento",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "agendar-consulta"
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "agendamentos",
+        "columns": "nome,email,telefone,servico,mensagem,data_criacao,status",
+        "additionalFields": {}
+      },
+      "id": "supabase-insert",
+      "name": "Supabase - Guardar Agendamento",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [480, 300],
+      "credentials": {
+        "supabaseApi": {
+          "id": "SUPABASE_CREDENTIAL_ID",
+          "name": "Supabase Clinica"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "nome",
+              "value": "={{ $json.body.nome }}"
+            },
+            {
+              "name": "email",
+              "value": "={{ $json.body.email }}"
+            },
+            {
+              "name": "telefone",
+              "value": "={{ $json.body.telefone }}"
+            },
+            {
+              "name": "servico",
+              "value": "={{ $json.body.servico }}"
+            },
+            {
+              "name": "mensagem",
+              "value": "={{ $json.body.mensagem || '' }}"
+            },
+            {
+              "name": "data_criacao",
+              "value": "={{ $now.toISO() }}"
+            },
+            {
+              "name": "status",
+              "value": "pendente"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-data",
+      "name": "Preparar Dados",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [360, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, message: 'Agendamento recebido com sucesso!' }) }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              }
+            ]
+          }
+        }
+      },
+      "id": "response-success",
+      "name": "Resposta Sucesso",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "fromEmail": "clinica@sorrisodesantiago.cv",
+        "toEmail": "={{ $json.email }}",
+        "subject": "Confirmação de Agendamento - Sorriso de Santiago",
+        "emailType": "html",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1d1d1f; }\n.container { max-width: 600px; margin: 0 auto; padding: 40px 20px; }\n.header { text-align: center; margin-bottom: 40px; }\n.logo { font-size: 24px; font-weight: 700; color: #1d1d1f; }\n.content { background: #f5f5f7; border-radius: 16px; padding: 32px; }\nh1 { font-size: 28px; margin-bottom: 16px; }\n.info { margin: 24px 0; }\n.info-item { padding: 12px 0; border-bottom: 1px solid #e5e5e5; }\n.info-item:last-child { border-bottom: none; }\n.label { font-size: 12px; color: #86868b; text-transform: uppercase; letter-spacing: 0.5px; }\n.value { font-size: 16px; font-weight: 500; margin-top: 4px; }\n.footer { text-align: center; margin-top: 40px; font-size: 14px; color: #86868b; }\n</style>\n</head>\n<body>\n<div class=\"container\">\n<div class=\"header\">\n<div class=\"logo\">🦷 Sorriso de Santiago</div>\n</div>\n<div class=\"content\">\n<h1>Pedido de Agendamento Recebido</h1>\n<p>Olá <strong>{{ $json.nome }}</strong>,</p>\n<p>Recebemos o seu pedido de agendamento. A nossa equipa irá contactá-lo em breve para confirmar a data e hora da consulta.</p>\n<div class=\"info\">\n<div class=\"info-item\">\n<div class=\"label\">Serviço</div>\n<div class=\"value\">{{ $json.servico || 'A definir' }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Telefone</div>\n<div class=\"value\">{{ $json.telefone }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Email</div>\n<div class=\"value\">{{ $json.email }}</div>\n</div>\n</div>\n<p>Se tiver alguma dúvida, não hesite em contactar-nos.</p>\n</div>\n<div class=\"footer\">\n<p><strong>Clínica Dentária Sorriso de Santiago</strong></p>\n<p>Av. Cidade de Lisboa, Plateau, Praia</p>\n<p>📞 (+238) 999 1234 | ✉️ info@sorrisodesantiago.cv</p>\n</div>\n</div>\n</body>\n</html>",
+        "options": {}
+      },
+      "id": "send-email-client",
+      "name": "Email - Confirmação Cliente",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [600, 480],
+      "credentials": {
+        "smtp": {
+          "id": "SMTP_CREDENTIAL_ID",
+          "name": "SMTP Clinica"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "sistema@sorrisodesantiago.cv",
+        "toEmail": "info@sorrisodesantiago.cv",
+        "subject": "🦷 Novo Agendamento - {{ $json.nome }}",
+        "emailType": "html",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody { font-family: -apple-system, sans-serif; line-height: 1.6; color: #1d1d1f; }\n.container { max-width: 600px; margin: 0 auto; padding: 40px 20px; }\n.header { background: #0071e3; color: white; padding: 24px; border-radius: 16px 16px 0 0; text-align: center; }\n.content { background: #f5f5f7; padding: 32px; border-radius: 0 0 16px 16px; }\n.info-item { padding: 16px; background: white; border-radius: 8px; margin-bottom: 12px; }\n.label { font-size: 12px; color: #86868b; text-transform: uppercase; }\n.value { font-size: 18px; font-weight: 600; margin-top: 4px; }\n.btn { display: inline-block; background: #0071e3; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 16px; }\n</style>\n</head>\n<body>\n<div class=\"container\">\n<div class=\"header\">\n<h1 style=\"margin:0;font-size:24px;\">Novo Agendamento</h1>\n</div>\n<div class=\"content\">\n<div class=\"info-item\">\n<div class=\"label\">Nome</div>\n<div class=\"value\">{{ $json.nome }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Email</div>\n<div class=\"value\">{{ $json.email }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Telefone</div>\n<div class=\"value\">{{ $json.telefone }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Serviço</div>\n<div class=\"value\">{{ $json.servico || 'Não especificado' }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Mensagem</div>\n<div class=\"value\">{{ $json.mensagem || 'Sem mensagem' }}</div>\n</div>\n<div class=\"info-item\">\n<div class=\"label\">Data do Pedido</div>\n<div class=\"value\">{{ $now.format('dd/MM/yyyy HH:mm') }}</div>\n</div>\n</div>\n</div>\n</body>\n</html>",
+        "options": {}
+      },
+      "id": "send-email-clinic",
+      "name": "Email - Notificação Clínica",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [600, 660],
+      "credentials": {
+        "smtp": {
+          "id": "SMTP_CREDENTIAL_ID",
+          "name": "SMTP Clinica"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook - Receber Agendamento": {
+      "main": [
+        [
+          {
+            "node": "Preparar Dados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar Dados": {
+      "main": [
+        [
+          {
+            "node": "Supabase - Guardar Agendamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Supabase - Guardar Agendamento": {
+      "main": [
+        [
+          {
+            "node": "Resposta Sucesso",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Email - Confirmação Cliente",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Email - Notificação Clínica",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "Clínica Dentária"
+    }
+  ],
+  "triggerCount": 0,
+  "pinData": {}
+}

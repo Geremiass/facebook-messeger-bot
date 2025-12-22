@@ -612,11 +612,49 @@ if(target){e.preventDefault();window.scrollTo({top:target.offsetTop-60,behavior:
 })
 });
 
-// Form
-document.getElementById('formContacto').addEventListener('submit',function(e){
-e.preventDefault();
-alert('✓ Pedido enviado com sucesso!');
-this.reset();
+// Form - Enviar para n8n webhook
+const N8N_WEBHOOK_URL = 'https://SEU-N8N.app.n8n.cloud/webhook/agendar-consulta'; // ← Substituir pelo seu URL
+
+document.getElementById('formContacto').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const btn = this.querySelector('button[type="submit"]');
+    const btnText = btn.textContent;
+    btn.textContent = 'A enviar...';
+    btn.disabled = true;
+
+    const formData = {
+        nome: this.querySelector('input[type="text"]').value,
+        email: this.querySelector('input[type="email"]').value,
+        telefone: this.querySelector('input[type="tel"]').value,
+        servico: this.querySelector('select').value,
+        mensagem: this.querySelector('textarea').value
+    };
+
+    try {
+        const response = await fetch(N8N_WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            // Mostrar mensagem de sucesso
+            this.innerHTML = `
+                <div style="text-align:center;padding:40px 0;">
+                    <div style="font-size:48px;margin-bottom:16px;">✓</div>
+                    <h3 style="margin-bottom:8px;">Pedido Enviado!</h3>
+                    <p style="color:#86868b;">Entraremos em contacto brevemente.</p>
+                </div>
+            `;
+        } else {
+            throw new Error('Erro ao enviar');
+        }
+    } catch (error) {
+        alert('Erro ao enviar. Por favor, tente novamente ou ligue-nos.');
+        btn.textContent = btnText;
+        btn.disabled = false;
+    }
 });
 });
 </script>
