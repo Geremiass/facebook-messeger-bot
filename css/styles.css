@@ -4,24 +4,25 @@
 
 /* ==================== Variables ==================== */
 :root {
-    /* Colors */
-    --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #818cf8;
-    --secondary-color: #ec4899;
-    --accent-color: #14b8a6;
+    /* Colors - Prismidia Brand */
+    --primary-color: #0891b2;
+    --primary-dark: #1a365d;
+    --primary-light: #38bdf8;
+    --secondary-color: #0891b2;
+    --accent-color: #38bdf8;
+    --navy: #1a365d;
 
-    /* Gradient */
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
-    --gradient-secondary: linear-gradient(135deg, #14b8a6 0%, #6366f1 100%);
-    --gradient-dark: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    /* Gradient - Prismidia Brand */
+    --gradient-primary: linear-gradient(135deg, #1a365d 0%, #0891b2 50%, #38bdf8 100%);
+    --gradient-secondary: linear-gradient(135deg, #38bdf8 0%, #0891b2 100%);
+    --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1a365d 100%);
 
     /* Background */
-    --bg-primary: #0f0f23;
-    --bg-secondary: #1a1a2e;
-    --bg-tertiary: #16213e;
+    --bg-primary: #0f172a;
+    --bg-secondary: #1a365d;
+    --bg-tertiary: #1e3a5f;
     --bg-card: rgba(255, 255, 255, 0.03);
-    --bg-card-hover: rgba(255, 255, 255, 0.08);
+    --bg-card-hover: rgba(56, 189, 248, 0.08);
 
     /* Text */
     --text-primary: #ffffff;
@@ -36,7 +37,7 @@
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
-    --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
+    --shadow-glow: 0 0 40px rgba(8, 145, 178, 0.3);
 
     /* Typography */
     --font-family: 'Inter', sans-serif;
