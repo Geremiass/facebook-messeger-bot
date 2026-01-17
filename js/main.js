@@ -1,5 +1,5 @@
 /* ============================================
-   AutomateFlow - Main JavaScript
+   Prismidia - Main JavaScript
    ============================================ */
 
 // ==================== DOM Elements ====================
@@ -471,11 +471,11 @@ window.addEventListener('load', () => {
 
 // ==================== Console Easter Egg ====================
 console.log(`
-%c🚀 AutomateFlow
+%c🚀 Prismidia
 %cTransformando negócios através da automação inteligente com n8n
 
 Interessado em trabalhar conosco?
-Visite: automateflow.com.br/carreiras
+Visite: prismidia.com.br/carreiras
 `,
 'font-size: 24px; font-weight: bold; color: #6366f1;',
 'font-size: 14px; color: #a1a1aa;'

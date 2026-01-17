@@ -1,5 +1,5 @@
 /* ============================================
-   AutomateFlow - Main Stylesheet
+   Prismidia - Main Stylesheet
    ============================================ */
 
 /* ==================== Variables ==================== */
@@ -245,13 +245,16 @@ select {
     align-items: center;
     gap: var(--spacing-sm);
     font-size: var(--font-size-xl);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--text-primary);
 }
 
-.nav__logo i {
-    color: var(--primary-color);
-    font-size: var(--font-size-2xl);
+.nav__logo strong {
+    font-weight: 700;
+}
+
+.nav__logo .logo-icon {
+    flex-shrink: 0;
 }
 
 .nav__list {
