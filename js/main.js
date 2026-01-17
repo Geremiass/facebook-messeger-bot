@@ -475,7 +475,7 @@ console.log(`
 %cTransformando negócios através da automação inteligente com n8n
 
 Interessado em trabalhar conosco?
-Visite: prismidia.com.br/carreiras
+Visite: prismidia.cv/carreiras
 `,
 'font-size: 24px; font-weight: bold; color: #6366f1;',
 'font-size: 14px; color: #a1a1aa;'
